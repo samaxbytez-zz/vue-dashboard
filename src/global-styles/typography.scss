@@ -1,0 +1,50 @@
+// Font Family
+
+$system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+
+// Headings
+
+@mixin heading-1 {
+    font-size: 80px;
+    line-height: 86px;
+    font-weight: bold;
+}
+
+@mixin heading-2 {
+    font-size: 60px;
+    line-height: 86px;
+    font-weight: bold;
+}
+
+@mixin heading-3 {
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: bold;
+}
+
+@mixin heading-4 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+
+
+// Body Text
+
+%large {
+    line-height: 37px;
+    font-size: 24px;
+}
+
+
+@mixin large-text {
+    @extend %large
+}
+
+@mixin large-text-bold {
+    @extend %large;
+    font-weight: bold;
+}
